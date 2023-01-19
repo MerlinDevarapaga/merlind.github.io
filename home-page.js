@@ -50,15 +50,38 @@ function addAboutMe() {
 }
 
 async function fetchEdLinks() {
-  try {
-    const edUrl = environment.edLinkUrl;
-    const response = await fetch(edUrl);
+//  try {
+//    const edUrl = environment.edLinkUrl;
+//    const response = await fetch(edUrl);
+//
+//    return response.json();
+//  } catch (error) {
+//    console.error(error);
+//    // Fail silently
+//  }
+return [{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/ADAS',
+text:'ADAS'},
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/Basic car knowledge',text:'Basic car knowledge'},
 
-    return response.json();
-  } catch (error) {
-    console.error(error);
-    // Fail silently
-  }
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/CAN',text:'CAN'},
+
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/CANOE',text:'CANOE'},
+
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/ECU',text:'ECU'},
+
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/Ethernet',text:'Ethernet'},
+
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/FUSA',text:'Introduction to Automotive Engineering'},
+
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/ADAS',text:'ISO 26262'},
+
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/ADAS',text:'LIN'},
+
+{link:'https://github.com/MerlinDevarapaga/Automotive/tree/main/ADAS',text:'UDS'},
+
+
+]
+
 }
 
 async function addEdLinks() {
